@@ -14,17 +14,17 @@ pipeline {
                 sh 'mvn package'
             }
         }
-          stage('Test') {
+        stage('Test') {
             steps {
                 sh 'mvn test'
             }
         }
-          stage('Deploy') {
+        stage('Deploy') {
             steps {
                 echo 'Deploy step'
             }
         }
-          stage('Docker') {
+        stage('Docker') {
             steps {
                 echo 'Image stape'
             }
